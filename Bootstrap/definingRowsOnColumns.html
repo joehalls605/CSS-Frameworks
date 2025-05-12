@@ -8,20 +8,25 @@
     <style>
         .box{
             width: 100%;
-            background-color:yellow;
+            background-color:lightblue;
         }
     </style>
 </head>
 <body>
 <!-- Fixed-width container that scales based on viewport size -->
 <div class="container">
-    <div class="row">
-        <h2>Using standard row and columns</h2>
+    <div class="row row-cols-2"> <!-- Gives you two columns every single row -->
         <div class="col">
             <div class="box">Box 1</div>
         </div>
         <div class="col">
             <div class="box">Box 2</div>
+        </div>
+        <div class="col-8"> <!-- Let's go over this one and make it 8 columns wide -->
+            <div class="box">Box 3</div>
+        </div>
+        <div class="col">
+            <div class="box">Box 4</div>
         </div>
     </div>
     <div class="row">
@@ -32,25 +37,6 @@
             <div class="box">Box 4</div>
         </div>
     </div>
-    <h2>Setting row and columns based on the 12 column grid system</h2>
 </div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-3 bg-primary text white">
-            Column 1
-        </div>
-        <div class="col-3 bg-secondary text white">
-            Column 2
-        </div>
-        <div class="col-3 bg-success text white">
-            Column 3
-        </div>
-        <div class="col-auto bg-info text white">
-            Column 4
-        </div>
-    </div>
-</div>
-
 </body>
 </html>
